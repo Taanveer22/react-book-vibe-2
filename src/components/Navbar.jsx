@@ -1,16 +1,19 @@
+import { NavLink } from "react-router-dom";
+import bookLogo from "../assets/book.ico";
+
 const Navbar = () => {
   const links = (
-    <>
-      <li>
-        <a>Home</a>
-      </li>
-      <li>
-        <a>Listed Books</a>
-      </li>
-      <li>
-        <a>Dashboard</a>
-      </li>
-    </>
+    <div className="flex gap-6">
+      <NavLink to="/" className="btn btn-outline">
+        Home
+      </NavLink>
+      <NavLink to="/listedBooks" className="btn btn-outline">
+        Listed Books
+      </NavLink>
+      <NavLink to="/dashboard" className="btn btn-outline">
+        Dashboard
+      </NavLink>
+    </div>
   );
   return (
     <div className="navbar bg-base-100 shadow-sm mb-12">
@@ -39,6 +42,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
+        <img src={bookLogo} className="w-8"></img>
         <a className="btn btn-ghost text-3xl font-bold">Book Vibe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -46,7 +50,7 @@ const Navbar = () => {
           {links}
         </ul>
       </div>
-      <div className="navbar-end gap-5">
+      <div className="hidden sm:flex navbar-end gap-5">
         <a className="btn btn-primary">Sign Up</a>
         <a className="btn btn-secondary">Sign In</a>
       </div>

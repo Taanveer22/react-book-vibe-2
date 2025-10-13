@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const OneBook = ({ bookElement }) => {
-  const { bookName, author, image, totalPages, rating } = bookElement;
+  const { bookId, bookName, author, image, totalPages, rating } = bookElement;
   return (
-    <div>
+    <Link to={`/books/${bookId}`}>
       <div className="card shadow-sm">
-        <figure className="w-80 mx-auto bg-slate-200 py-8 mt-4">
+        <figure className="w-11/12 h-4/5 mx-auto my-auto bg-slate-200 py-8 mt-4">
           <img className="w-32 h-48" src={image} />
         </figure>
         <div className="card-body">
@@ -17,7 +19,7 @@ const OneBook = ({ bookElement }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
