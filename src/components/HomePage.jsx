@@ -1,9 +1,11 @@
 import Banner from "./Banner";
+import Books from "./Books";
 
 const HomePage = () => {
   return (
-    <div className="mb-12">
+    <div >
       <Banner></Banner>
+      <Books></Books>
     </div>
   );
 };
