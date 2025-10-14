@@ -1,7 +1,7 @@
 import heroImage from "../assets/books.jpg";
 const Banner = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen mb-12">
+    <div className="hero rounded-2xl bg-slate-300 min-h-screen mb-12">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={heroImage} className="max-w-sm rounded-lg shadow-2xl" />
         <div>
