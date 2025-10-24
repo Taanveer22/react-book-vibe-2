@@ -4,13 +4,13 @@ import bookLogo from "../assets/book.ico";
 const Navbar = () => {
   const links = (
     <div className="flex gap-6">
-      <NavLink to="/" className="btn btn-outline">
+      <NavLink to="/">
         Home
       </NavLink>
-      <NavLink to="/listedBooks" className="btn btn-outline">
+      <NavLink to="/listedBooks">
         Listed Books
       </NavLink>
-      <NavLink to="/dashboard" className="btn btn-outline">
+      <NavLink to="/dashboard">
         Dashboard
       </NavLink>
     </div>
